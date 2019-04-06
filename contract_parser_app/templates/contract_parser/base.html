@@ -39,7 +39,7 @@
     var myDropzone = new Dropzone("form.upload-form", { url: "/" });
     myDropzone.on('success', function(a, b) {
       console.log(b) // item from DB (including the ID)
-      window.location = `${window.location.host}/detail/${b.pk}`
+      // window.location = `${window.location.host}/detail/${b.pk}`
     })
   </script>
 </body>
