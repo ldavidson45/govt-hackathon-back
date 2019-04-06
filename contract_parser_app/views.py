@@ -16,10 +16,11 @@ def upload_file(request):
         if form.is_valid():
             print ("valid form")
             parsed_doc = parse_document(request.FILES['file'])
-        return redirect(request, 'contract_parser/contract_show.html', {"contract": parsed_doc})
+            print(parsed)
+        return render(request, 'contract_parser/contract_show.html', {'contract': parsed_doc} )
     else:
         form = UploadFileForm()
-    return (request, 'contract_parser/file_upload.html', {'form': form})
+        return render(request, 'contract_parser/file_upload.html', {'form': form})
 
 def contract_detail(request):
     return render(request, 'contract_parser/contract_show.html')
