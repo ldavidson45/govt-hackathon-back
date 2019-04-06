@@ -16,4 +16,4 @@ def upload_file(request):
             return HttpResponseRedirect('/success/url/')
     else:
         form = UploadFileForm()
-    return render(request, 'file_upload.html', {'form': form})
+    return render(request, 'contract_parser/file_upload.html', {'form': form})
