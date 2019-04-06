@@ -16,10 +16,18 @@ def upload_file(request):
         if form.is_valid():
             print ("valid form")
             parsed_doc = parse_document(request.FILES['file'])
-        return redirect(request, 'contract_parser/contract_show.html', {"contract": parsed_doc})
+            print(parsed_doc)
+            # First:
+            # import model
+            # save parsed_doc to DB through model
+            # send back instance from model (which will include the ID)
+        return JsonResponse(parsed_doc, safe=False)
+        # return render(request, 'contract_parser/contract_show.html', {"contract": parsed_doc})
     else:
         form = UploadFileForm()
-    return (request, 'contract_parser/file_upload.html', {'form': form})
+    return render(request, 'contract_parser/file_upload.html', {'form': form})
 
-def contract_detail(request):
+def contract_detail(request, pk):
+    # Third:
+    # Look up item from db
     return render(request, 'contract_parser/contract_show.html')

@@ -193,3 +193,8 @@ body {
   margin: 5px;
   line-height: 300%;
 }
+
+.document-icon {
+  width: 50%;
+  margin-top: 8px;
+}
