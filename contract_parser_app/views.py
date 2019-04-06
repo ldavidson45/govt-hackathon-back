@@ -17,3 +17,6 @@ def upload_file(request):
     else:
         form = UploadFileForm()
     return render(request, 'contract_parser/file_upload.html', {'form': form})
+
+def contract_detail(request):
+    return render(request, 'contract_parser/contract_show.html')
