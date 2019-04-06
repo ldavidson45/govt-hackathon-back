@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from .forms import UploadFileForm
-from .parse_script import parse_document
+# from .parse_script import parse_document
 
 # Create your views here.
 
@@ -12,8 +12,8 @@ def upload_file(request):
     if request.method == 'POST':
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
-            parse_document(request.FILES['file'])
+            # parse_document(request.FILES['file'])
             return HttpResponseRedirect('/success/url/')
     else:
         form = UploadFileForm()
-    return render(request, 'upload.html', {'form': form})
+    return render(request, 'file_upload.html', {'form': form})
