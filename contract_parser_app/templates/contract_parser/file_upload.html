@@ -4,11 +4,12 @@
 
   <div class="dropzone-container">
     <form method="POST" action="#" class="dropzone" id="main-file-dropzone" enctype="multipart/form-data">
-      <h4><i class="material-icons">add_circle_outline</i>&nbsp;&nbsp;Add files for analysis...</h4>
-      <h6>Drag and drop documents from a potential contract</h6>
+      <h4>Drag a file or <span class="dropzone-blue-motif">browse</span> to upload</h4>
+      <br />
+      <h6>Save documents to summarize requirements for the proposed contract</h6>
       <br />
       <br />
-      <i class="material-icons dropzone-blue-folder">create_new_folder</i>
+      <i class="material-icons dropzone-touch-icon">touch_app</i>
       {% csrf_token %}
     </form>
   </div>

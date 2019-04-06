@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from .forms import UploadFileForm
 # from .parse_script import parse_document
@@ -13,7 +13,7 @@ def upload_file(request):
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
             # parse_document(request.FILES['file'])
-            return HttpResponseRedirect('/success/url/')
+            return redirect('upload_file')
     else:
         form = UploadFileForm()
     return render(request, 'contract_parser/file_upload.html', {'form': form})

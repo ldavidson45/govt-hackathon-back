@@ -43,17 +43,28 @@ body: {
 .dropzone {
   width: 80%;
   min-height: 350px;
-  border: none;
-  background-color: lightgray;
+  border: dashed 3px black;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 
-.dropzone h6 {
-  color: darkgray;
-  margin-left: 3.8%;
+.dropzone h4 {
+  font-family: 'Open Sans';
+  font-weight: bolder;
 }
 
-.dropzone-blue-folder {
+.dropzone h6 {
+  color: #EAEAEA;
+}
+
+.dropzone-touch-icon {
+  color: #EAEAEA;
+  font-size: 12rem;
+  position: relative;
+  left: 70%;
+  top: -50px;
+}
+
+.dropzone-blue-motif {
   color: #4A95E9;
-  font-size: 9rem;
 }
