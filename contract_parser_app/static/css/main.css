@@ -36,5 +36,24 @@ body: {
 }
 
 .dropzone-container {
-  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.dropzone {
+  width: 80%;
+  min-height: 350px;
+  border: none;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+
+.dropzone h6 {
+  color: darkgray;
+  margin-left: 3.8%;
+}
+
+.dropzone-blue-folder {
+  color: #4A95E9;
+  font-size: 9rem;
 }

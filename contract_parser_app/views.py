@@ -10,12 +10,10 @@ from .forms import UploadFileForm
 
 def upload_file(request):
     if request.method == 'POST':
-        print(request.FILES)
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
             # parse_document(request.FILES['file'])
             return HttpResponseRedirect('/success/url/')
     else:
-        print(request.FILES)
         form = UploadFileForm()
     return render(request, 'contract_parser/file_upload.html', {'form': form})

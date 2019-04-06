@@ -8,8 +8,8 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="../static/css/main.css">
   <link rel="stylesheet" href="static/css/dropzone.css">
+  <link rel="stylesheet" href="../static/css/main.css">
 </head>
 <body>
   <div class="navbarside">
@@ -21,13 +21,15 @@
     </div>
   </div>
 
-  <div class="all-content">
-    <h1>Contract Condor</h1>
-    {% block content %}{% endblock %}
-    <footer>
-      <p>Footer</p>
-      <i class="material-icons">create_new_folder</i>
-    </footer>
+  <div class="row">
+    <div class="all-content">
+      <h1>Contract Condor</h1>
+      {% block content %}{% endblock %}
+      <footer>
+        <p>Footer</p>
+        <i class="material-icons">create_new_folder</i>
+      </footer>
+    </div>
   </div>
 
   <script src="static/js/dropzone.js"
