@@ -38,6 +38,7 @@ body {
 .dropzone-container {
   display: flex;
   justify-content: center;
+  margin-top: 5%;
 }
 
 .dropzone {
@@ -50,11 +51,11 @@ body {
 
 .dropzone h4 {
   font-family: 'Open Sans';
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .dropzone h6 {
-  color: #EAEAEA;
+  color: #C4C4C4;
 }
 
 .dropzone-touch-icon {
@@ -68,6 +69,19 @@ body {
 .dropzone-blue-motif {
   color: #4A95E9;
 }
+
+.dropzone-save-button {
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  font-size: 1.15rem;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #4A95E9;
+  border-radius: 50px;
+}
+
 /* .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -141,4 +155,41 @@ body {
 
 .requirement-text {
   padding-left: 5px;
+}
+
+.search-bar-container {
+  width: 60%;
+  position: relative;
+  right: -42%;
+  top: 30px;
+}
+
+.search-bar-container * {
+  display: inline;
+  color: #4A95E9;
+}
+
+#main-search {
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding-left: 35px;
+}
+
+.prefix-hack {
+  position: relative;
+  right: -35px;
+  top: 6px;
+  color: lightgray;
+}
+
+.list-headers div {
+  font-weight: bold;
+}
+
+.grayed-list-item {
+  background-color: lightgray;
+  border-radius: 25px;
+  margin: 5px;
+  line-height: 300%;
 }

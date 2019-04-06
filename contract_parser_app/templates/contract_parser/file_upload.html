@@ -1,6 +1,14 @@
 {% extends 'contract_parser/base.html' %}
 {% block content %}
   
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <i class="material-icons prefix prefix-hack">search</i>
+      <input type="text" id="main-search" placeholder="Search your RFPs"> &nbsp;&nbsp;&nbsp;
+      <i class="material-icons">notifications</i> &nbsp;&nbsp;&nbsp;
+      <i class="material-icons">account_circle</i>
+    </div>
+  </div>
 
   <div class="dropzone-container">
     <form method="POST" action="#" class="dropzone" id="main-file-dropzone" enctype="multipart/form-data">
@@ -10,8 +18,16 @@
       <br />
       <br />
       <i class="material-icons dropzone-touch-icon">touch_app</i>
+      <br />
+      <br />
+      <a href="#" class="dropzone-save-button">Save to my files</a>
       {% csrf_token %}
     </form>
   </div>
+
+  <br />
+  <br />
+
+  {% include 'contract_parser/saved_files_list.html' %}
 
   {% endblock %}
