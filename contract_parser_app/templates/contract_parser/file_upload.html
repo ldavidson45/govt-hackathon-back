@@ -1,9 +1,11 @@
 {% extends 'contract_parser/base.html' %}
 {% block content %}
   
-  <div method="post" enctype="multipart/form-data">
-  {% csrf_token %}
-  <input type="file" name="myfile"><br><br>
-  <input type="submit" value="upload">
+
+  <div class="dropzone-container">
+    <form method="POST" action="#" class="dropzone" id="main-file-dropzone" enctype="multipart/form-data">
+      {% csrf_token %}
+    </form>
+  </div>
 
   {% endblock %}
