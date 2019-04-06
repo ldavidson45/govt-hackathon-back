@@ -1,4 +1,4 @@
-body: {
+body {
   margin: 0;
 }
 
@@ -20,7 +20,7 @@ body: {
 .navbarside a {
   padding: 10px 10px 10px 25px;
   display: block;
-  color: #4A95E9;
+  color: #4a95e9;
   font-size: 2rem;
 }
 
@@ -67,4 +67,78 @@ body: {
 
 .dropzone-blue-motif {
   color: #4A95E9;
+}
+/* .sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+} */
+
+.contract-detail-container {
+  width: 600px;
+  margin: 20px auto;
+  /* background-color: lightgray; */
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.title-box {
+  display: inline-flex;
+  /* background: red; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contract-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 34px;
+  margin: 0 0 20px 0;
+}
+
+.top-level-detail-container {
+  display: flex;
+  max-width: 600px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.small-detail-container {
+  /* background: lightgray; */
+  margin: 20px auto;
+  width: 250px;
+}
+
+.detail-description-head {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #c4c4c4;
+}
+
+.detail-variable {
+  font-weight: 600;
+  font-size: 20px;
+  color: #0970e0;
+  padding: 0 10px;
+}
+
+.requirements-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.requirements-container {
+  display: inline-flex;
+}
+
+.page-number {
+  border-right: solid 1px black;
+  padding-right: 5px;
+}
+
+.requirement-text {
+  padding-left: 5px;
 }
