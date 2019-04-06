@@ -37,3 +37,6 @@ def contract_detail(request, pk):
     # Third:
     # Look up item from db
     return render(request, 'contract_parser/contract_show.html')
+
+
+# Merged
